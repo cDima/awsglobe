@@ -14,6 +14,12 @@ The Encom Globe was written as part of a [larger project](http://www.robscanlon.
 
 View [index.html](index.html) for a usage example.
 
+Launching the code via npm:
+```sh
+npm install
+http-server
+```
+
 ### License
 
 The MIT License (MIT)

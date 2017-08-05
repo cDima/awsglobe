@@ -125,7 +125,7 @@
 
                     animate();
 
-                    /* add pins at random locations */
+                    /* add pins at random locations
                     setInterval(function(){
                         if(!globe || !$("#globe-dd:checked").length){
                             return;
@@ -137,10 +137,11 @@
 
                         globe.addPin(lat,lon, name);
 
-                    }, 5000);
+                    }, 5000); */
+                    
                 }
                 
-                /* add 6 satellites in random locations */
+                /* add 6 satellites in random locations 
 
                 if($("#globe-dd:checked").length){
                     setTimeout(function(){
@@ -163,13 +164,21 @@
 
                         globe.addConstellation(constellation, opts);
                     }, 4000);
-
-                    /* add the connected points that are in the movie */
+ 
+                    // add the connected points that are in the movie 
                     setTimeout(function(){
                         globe.addMarker(49.25, -123.1, "Vancouver");
                         globe.addMarker(35.6895, 129.69171, "Tokyo", true);
                     }, 2000);
                 }
+                */
+
+                // add the connected points that are in the movie 
+
+                setTimeout(function(){
+                    globe.addMarker(38.13,-78.45, "N. Virginia (us-east-1)");
+                    globe.addMarker(1.37,103.80, "Singapore (ap-southeast-1)", true);
+                }, 2000);
 
             }
 
@@ -399,15 +408,14 @@
     <body>
         <div id="container">
             <div id="banner">
-                Encom Globe
-                <small>by <a href="http://twitter.com/arscan">@arscan</a></small>
-
+                <small>Amazon AWS Regions by <a href="http://twitter.com/cdima">Dmitry Sadakov</a></small>
             </div>
             <div id="globe">
             </div>
             <div id="info-box">
-                A tribute to the <a href="http://work.gmunk.com/TRON-Board-Room">boardroom scene</a> in Disney's <a href="http://www.imdb.com/title/tt1104001/">Tron: Legacy</a>.  Built for reuse. Source on <a href="http://github.com/arscan/encom-globe/" class="github-link">Github</a>.
+                Based on tron-inspired <a href="http://github.com/arscan/encom-globe/" class="github-link">Encom Globe</a> by <a href="http://twitter.com/arscan">@arscan</a>.
             </div>
+
             <div id="options">
                 <div id="options-content">
                     <h3>Add element by clicking map below</h3>
@@ -495,21 +503,6 @@
                     
                 </div>
             </div>
-            <div class="header" id="header-top">
-                <div class="header-left-section">CENTRAL SYSTEM DATA ... <span class="alt-1">LAUNCH ENCOM GLOBALIZATION</span></div>
-                <div class="header-right-section">OIA | 012</div>
-            </div>
-
-            <div class="header" id="header-bottom">
-                <div class="header-left-section">TOUCHPOINT KEYBOARD ... <span class="alt-1">INTERACTION SEQUENCING</span></div>
-                <div class="header-right-section">SYS | O12</div>
-            </div>
-            <div id="thumbprint">
-                <img src="resources/thumbprint.png" />
-            </div>
-            <!-- probably should remove these and have them created in the script-->
-            <div class="header-animator" id="header-animator-inside"></div>
-            <div class="header-animator" id="header-animator-outside"></div>
 
         </div>
         <!-- ref:include analytics -->
