@@ -429,15 +429,19 @@ Globe.prototype.addPin = function(lat, lon, text){
 
         if(collisionCount > 0 && tooYoungCount == 0){
             for(var i = 0; i< hidePins.length; i++){
+                /*
                 hidePins[i].hideLabel();
                 hidePins[i].hideSmoke();
                 hidePins[i].hideTop();
+                */
                 hidePins[i].changeAltitude(Math.random() * .05 + 1.1);
             }
         } else if (collisionCount > 0){
+            /*
             pin.hideLabel();
             pin.hideSmoke();
             pin.hideTop();
+            */
             pin.changeAltitude(Math.random() * .05 + 1.1);
         }
     }

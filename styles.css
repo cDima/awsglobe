@@ -6,9 +6,10 @@ body {
     font-family: 'Inconsolata', sans-serif;
     color: #fff;
     font-size: 8pt;
-    margin: 0;
-    overflow: hidden;
+    /*margin: 0;
+    overflow: hidden;*/
 }
+
 
 a {
     color: #00eeee;
@@ -40,7 +41,7 @@ h3 {
     right: 10px;
     visibility: hidden;
     background: rgba(0,0,0,.9);
-    font-size: 12pt;
+    
     z-index:10;
     margin-left: auto;
     margin-right: auto;
@@ -335,7 +336,7 @@ label {
 }
 
 #banner {
-    font: 28pt Georgia;
+    font: 18pt Georgia;
     font-weight: bold;
     position: absolute;
     top: 20px;
@@ -345,14 +346,19 @@ label {
     margin: 0px;
     line-height: .5em;
     padding-left: 10px;
-
-
+    text-align: right;
 }
 #banner small {
-    font-size: 12pt;
+    display: block;
+    font-size: 10pt;
     white-space: nowrap;
     padding-left:3px;
+    padding-top: 6px;
+}
 
+#article {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 @media (max-width: 800px) {

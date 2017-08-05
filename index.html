@@ -141,7 +141,7 @@
                     
                 }
                 
-                /* add 6 satellites in random locations 
+                /* add 6 satellites in random locations */
 
                 if($("#globe-dd:checked").length){
                     setTimeout(function(){
@@ -165,19 +165,14 @@
                         globe.addConstellation(constellation, opts);
                     }, 4000);
  
-                    // add the connected points that are in the movie 
-                    setTimeout(function(){
-                        globe.addMarker(49.25, -123.1, "Vancouver");
-                        globe.addMarker(35.6895, 129.69171, "Tokyo", true);
-                    }, 2000);
                 }
-                */
+                
 
                 // add the connected points that are in the movie 
 
                 setTimeout(function(){
-                    globe.addMarker(38.13,-78.45, "N. Virginia (us-east-1)");
-                    globe.addMarker(1.37,103.80, "Singapore (ap-southeast-1)", true);
+                    globe.addMarker(38.13,-78.45, "");
+                    globe.addMarker(1.37,103.80, "", true);
                 }, 2000);
 
             }
@@ -408,7 +403,11 @@
     <body>
         <div id="container">
             <div id="banner">
-                <small>Amazon AWS Regions by <a href="http://twitter.com/cdima">Dmitry Sadakov</a></small>
+                Amazon AWS Regions
+                <small>by <a href="http://twitter.com/cdima">Dmitry Sadakov</a>.
+                </small>
+                <small>Tron-inspired <a href="http://github.com/arscan/encom-globe/" class="github-link">Encom Globe</a> by <a href="http://twitter.com/arscan">@arscan</a>.
+                </small>
             </div>
             <div id="globe">
             </div>
@@ -504,9 +503,12 @@
                 </div>
             </div>
 
+            <div id="article">
+
+            Transmitting replicated data from us-east-1 to ap-southeast-1...
+
+            </div>
         </div>
-        <!-- ref:include analytics -->
-        <!-- endref -->
     </body>
 </html>
 
